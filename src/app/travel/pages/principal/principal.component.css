@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "estilo_titulo";
+  src: url("../../../../assets/fuentes/RobotoCondensed-Bold.ttf");
+}
+@font-face {
+  font-family: "estilo_subtitulo";
+  src: url("../../../../assets/fuentes/RobotoCondensed-LightItalic.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+#caja_principal {
+  display: flex;
+  flex-flow: wrap column;
+  overflow: hidden;
+}
+#apartado_video {
+  width: 100%;
+}
+video {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#caja_secundaria {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: wrap column;
+  margin-left: 20px;
+  justify-content: center;
+  overflow: hidden;
+}
+#caja_secundaria h1 {
+  font-family: "estilo_titulo";
+  font-size: 100px;
+}
+#caja_secundaria h2 {
+  font-family: "estilo_subtitulo";
+  font-size: 60px;
+  color: rgb(61, 103, 103);
+  width: 500px;
+  transform: all 3s;
+}
+#caja_secundaria h2:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 3s;
+  transition-delay: 3s;
+  text-decoration-line: underline;
+}
+#caja_descripcion {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #1a1818;
+  background-image: linear-gradient(0deg, #1a1818 0%, #000000 50%);
+  z-index: 1;
+}
+
+#caja_descripcion h1 {
+  font-size: 70px;
+  font-family: "estilo_titulo";
+  color: rgb(61, 103, 103);
+}
+#caja_descripcion h1:hover {
+  color: #fbfbfd;
+  transition: all 350ms;
+}
+#caja_descripcion h3 {
+  font-size: 20px;
+  color: rgb(187, 210, 210);
+  font-family: "estilo_subtitulo";
+}
+hr {
+  height: 5px;
+  background-color: #fbfbfd;
+}
+#caja_descripcion p {
+  width: 800px;
+  padding: 10px;
+  margin-top: 20px;
+  font-family: "estilo_titulo";
+  line-height: 30px;
+  color: rgb(187, 210, 210);
+  text-align: justify;
+}
+#caja_descripcion p:hover {
+  transition: all 350ms;
+  border: 1px solid rgb(61, 103, 103);
+}
+#seccion-carrusel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+
+#formulario {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1a1818;
+}
+#formulario img {
+  width: 30%;
+  height: 50%;
+  border-radius: 25% 10%;
+}
+
+#formulario #suscripcion {
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+#formulario #suscripcion label,
+#formulario #suscripcion h1,
+#formulario #suscripcion input,
+#formulario #suscripcion span {
+  color: rgb(72, 147, 147);
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "estilo_subtitulo";
+}
+#formulario #suscripcion h1 {
+  font-size: 40px;
+  font-family: "estilo_titulo";
+}
+#formulario #suscripcion span {
+  color: red;
+}
+#formulario #suscripcion input {
+  height: 25px;
+  border-radius: 5px;
+  background-color: #d1d1d6;
+  padding: 2px;
+  color: #807a7a;
+}
+#formulario #suscripcion button {
+  width: 100px;
+  height: 50px;
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  border: 2px solid #3a9174;
+  transition: all 300ms;
+  font-family: "estilo_subtitulo";
+  color: #36b289;
+}
+#formulario #suscripcion button:hover {
+  transform: scale(1.2);
+}
+#formulario img:hover {
+  filter: grayscale(80%);
+}
+form {
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 42px;
+  border: 1px solid #36b289;
+}
+
+#mensaje {
+  width: 100%;
+  text-align: center;
+  color: #f9f9f9;
+  font-family: "estilo_titulo";
+  font-size: 20px;
+  position: relative;
+}
+@media (min-width: 360px) and (min-height: 640px) {
+  #caja_secundaria {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-flow: wrap column;
+    margin-left: 20px;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #caja_secundaria h1 {
+    margin-top: 80px;
+    font-size: 50px;
+  }
+  #caja_secundaria h2 {
+    font-size: 30px;
+    color: rgb(33, 53, 53);
+    width: 500px;
+    transform: all 3s;
+  }
+  #caja_descripcion h1 {
+    font-size: 40px;
+  }
+  #caja_descripcion p {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  #formulario img {
+    width: 0%;
+    height: 0%;
+    border-radius: 25% 10%;
+  }
+  #formulario #suscripcion span {
+    font-size: 11px;
+  }
+  #formulario #suscripcion {
+    width: 300px;
+  }
+  form {
+    width: 300px;
+  }
+}
+
+@media (min-width: 375px) and (min-height: 667px) {
+  #formulario img {
+    width: 0%;
+    height: 0%;
+    border-radius: 25% 10%;
+  }
+  #formulario #suscripcion {
+    width: 300px;
+  }
+  form {
+    width: 300px;
+  }
+}
+
+@media (min-width: 720px) and (min-height: 1280px) {
+  #caja_secundaria {
+    height: 400px;
+  }
+  #caja_secundaria h1 {
+    font-size: 80px;
+  }
+  #caja_secundaria h2 {
+    font-size: 50px;
+  }
+  #caja_descripcion {
+    width: 100%;
+    height: 77vh;
+  }
+
+  #caja_descripcion h1 {
+    font-size: 40px;
+  }
+  #caja_descripcion p {
+    width: 50%;
+    padding: 20px;
+    font-size: 25px;
+  }
+  #formulario #suscripcion {
+    width: 700px;
+  }
+  #formulario #suscripcion label,
+  #formulario #suscripcion h1,
+  #formulario #suscripcion input,
+  #formulario #suscripcion span {
+    font-size: 25px;
+  }
+  #formulario #suscripcion input {
+    height: 40px;
+  }
+  #formulario #suscripcion button {
+    width: 150px;
+    height: 60px;
+    font-size: 22px;
+  }
+  #formulario #suscripcion span {
+    color: red;
+    font-size: 19px;
+  }
+  form {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1366px) and (min-height: 768px) {
+  #caja_secundaria {
+    height: 400px;
+  }
+  #caja_secundaria h1 {
+    font-size: 80px;
+  }
+  #caja_secundaria h2 {
+    font-size: 50px;
+  }
+  #caja_descripcion h1 {
+    font-size: 40px;
+  }
+  #caja_descripcion p {
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  form {
+    width: 500px;
+  }
+  #formulario #suscripcion label,
+  #formulario #suscripcion h1,
+  #formulario #suscripcion input,
+  #formulario #suscripcion span {
+    font-size: 25px;
+  }
+  #formulario #suscripcion input {
+    height: 40px;
+  }
+  #formulario #suscripcion button {
+    width: 150px;
+    height: 60px;
+    font-size: 22px;
+  }
+  #formulario #suscripcion span {
+    font-size: 19px;
+  }
+}

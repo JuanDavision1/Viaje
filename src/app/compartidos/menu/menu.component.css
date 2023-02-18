@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "estilo_viaje";
+  src: url(../../../assets/fuentes/RobotoCondensed-Regular.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+#caja_navegacion {
+  width: 100%;
+  height: 100%;
+}
+#caja_navegacion ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#caja_navegacion ul li {
+  color: white;
+  font-family: "estilo_viaje";
+  width: 130px;
+  margin: 20px;
+}
+li {
+  cursor: pointer;
+}
+img {
+  height: 80px;
+  margin-right: auto;
+  margin-top: -18px;
+}
+button,
+svg {
+  opacity: 0;
+  position: absolute;
+}
+#check{
+  visibility: hidden;
+}
+@media (min-width: 360px) and (min-height: 640px) {
+  button,
+  svg {
+    opacity: 1;
+    position: relative;
+    margin-left: 30px;
+  }
+
+  nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .barbtn {
+    margin-top: 10px;
+    margin-left: 270px;
+    color: rgb(245, 245, 245);
+    cursor: pointer;
+  }
+  #caja_navegacion ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: -171px;
+    margin-left: -127px;
+    background-color: black;
+  }
+  ul li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 300ms;
+  }
+  img {
+    margin-left: -191px;
+    margin-bottom: 8px;
+    height: 63px;
+  }
+  #check {
+    display: none;
+  }
+  #check:checked ~ ul {
+    height: 100vh;
+  }
+  #check:checked ~ ul li {
+    display: block;
+  }
+}
+@media (min-width:720px) and (min-height: 1280px){
+    #caja_navegacion ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: -724px;
+        margin-left: -127px;
+        background-color: black;
+      }
+      #caja_navegacion ul li {
+        color: white;
+        font-family: "estilo_viaje";
+        width: 130px;
+        margin: 20px;
+        font-size: 30px;
+      }
+nav{
+  display: flex;
+  justify-content: center;
+}
+      img {
+        margin-left: -539px;
+        margin-bottom: 8px;
+        height: 103px;
+        width: 98px;
+      }
+}
+
+@media (min-width:1366px) and (min-height: 768px){
+    #caja_navegacion {
+        width: 100%;
+        height: 100%;
+      }
+      #caja_navegacion ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      #caja_navegacion ul li {
+        color: white;
+        font-family: "estilo_viaje";
+        width: 130px;
+        margin: 20px;
+      }
+      li {
+        cursor: pointer;
+      }
+      img {
+        height: 80px;
+    margin-right: auto;
+    margin-left: 175px;
+      }
+      button,
+      svg {
+        opacity: 0;
+        position: absolute;
+        margin-top: -20px;
+      }
+      nav {
+       display: block;
+      }
+      #caja_navegacion ul {
+        margin-top: -11px;
+        margin-right: auto;
+        background-color: black;
+      }
+      ul li {
+        display: flex;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all 300ms;
+      }
+   
+
+   
+}

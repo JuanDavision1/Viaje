@@ -1,0 +1,81 @@
+<h1>NUESTROS DESTINOS!</h1>
+<div id="carousel" class="carousel slide">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Diapo 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide-to="1"
+      aria-label="Diapo 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide-to="2"
+      aria-label="Diapo 3"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide-to="3"
+      aria-label="Diapo 4"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide-to="4"
+      aria-label="Diapo 5"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide-to="5"
+      aria-label="Diapo 6"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="../../../../assets/imagenes/PlayaGraceBay.jpg"
+        class="d-block w-100"
+        alt="PlayaGraceBay"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Viaja a Grace Bay</h5>
+        <a href="#">Apuntarme</a>
+      </div>
+    </div>
+    <div class="carousel-item" *ngFor="let item of imagencarousel">
+      <img [src]="item.img" class="d-block w-100" alt="item.alt" />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{ item.titulo }}</h5>
+        <a href="#"> {{ item.info }}</a>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Antes</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Desp</span>
+  </button>
+</div>

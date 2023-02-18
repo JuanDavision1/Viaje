@@ -1,0 +1,9 @@
+<footer id="pie_pagina">
+    <div id="caja_navegacion">
+        <ul>
+            <img src="../../../assets/imagenes/Logo.png">
+            <li *ngFor="let item of menu"   [routerLink]="[item.ruta]"  routerLinkActive="active"> {{item.texto}}</li>
+        </ul>
+    </div>
+ 
+</footer>

@@ -1,0 +1,65 @@
+<div id="caja_principal">
+  <section id="apartado_video">
+    <video
+      src="../../../../assets/videos/video.mp4"
+      autoplay="true"
+      muted="true"
+      loop="true"
+    ></video>
+    <div id="caja_secundaria">
+      <h1>LAVA.</h1>
+      <h2>El poder de Viajar</h2>
+    </div>
+    <div id="caja_descripcion">
+      <h1>Viaje Seguro</h1>
+      <h3>-Blog de viajes-</h3>
+      <hr />
+      <p>
+        Para unas vacaciones de ensueño en marzo no tienes que gastar mucho
+        dinero. En una isla griega como Samos, en el mar Egeo, en el Amazonas u
+        otros destinos. Puedes pasar unas vacaciones estupendas por MENOS de
+        1500 dólares y alojarte en un hotel, a pocos metros de la playa y del
+        centro. Todo el paquete, incluidos los vuelos, el desayuno y el
+        traslado. Suscríbete para más información
+      </p>
+    </div>
+  </section>
+  <hr />
+  <div id="seccion-carrusel">
+    <app-carousel></app-carousel>
+  </div>
+  <hr />
+  <div id="formulario">
+    <img src="../../../../assets/imagenes/mujermirandomapa.jpg" />
+    <div id="suscripcion">
+      <form [formGroup]="miformulario" (ngSubmit)="guardar()">
+        <h1>Suscribete!</h1>
+        <label>Nombre:</label>
+        <input
+          type="text"
+          formControlName="nombre_usuario"
+          placeholder="Ingresa tu nombre"
+        />
+        <br />
+        <span *ngIf="CampoNovalido('nombre_usuario')">
+          Debe ser al menos de 3 letras
+        </span>
+        <br />
+        <label>Correo:</label>
+        <input
+          type="email"
+          formControlName="correo_usuario"
+          placeholder="Ingresa tu correo"
+        />
+        <br />
+        <span *ngIf="CampoNovalido('correo_usuario')">
+          Recuerda: Solo se admite correos(@outlook o @gmail)
+        </span>
+        <button type="submit">Suscribirme!</button>
+      </form>
+    </div>
+    <br />
+    <div id="mensaje" #nuevo_texto></div>
+  </div>
+  <hr />
+</div>

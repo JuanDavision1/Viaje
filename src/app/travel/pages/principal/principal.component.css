@@ -312,7 +312,11 @@ form {
     margin-top: 20px;
     font-size: 25px;
   }
-
+ #formulario img {
+    width: 30%;
+    height: 50%;
+    border-radius: 25% 10%;
+  }
   form {
     width: 500px;
   }
